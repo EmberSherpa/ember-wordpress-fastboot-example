@@ -16,7 +16,9 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
+    
+    wordpressHost: 'http://104.196.21.75'
   };
 
   if (environment === 'development') {

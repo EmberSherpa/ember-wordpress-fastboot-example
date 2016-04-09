@@ -1,0 +1,13 @@
+<p>You can find the <a href="">repository</a> or explore the <a href="http://dev-ember-wordpress.pantheon.io/wp-json/wp/v2/">WP API</a> behind this demo.</p>
+
+<p>These are the latests <em>post</em> models from a test Wordpress installation.</p>
+<ul>
+	{{#each model as |post|}}
+		<li>{{link-to post.title 'post' post}}</li>
+	{{/each}}
+</ul>
+
+<p>And this is a <em>page</em> model.</p>
+{{link-to 'About page' 'page' 'about'}}
+
+{{outlet}}
